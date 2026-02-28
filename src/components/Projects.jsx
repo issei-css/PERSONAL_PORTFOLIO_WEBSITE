@@ -34,14 +34,15 @@ const projects = [
     github: 'https://github.com/issei-css/PC-Parts-Inventory-System',
     live: '#',
   },
-  {
+  
+ {
     title: 'Personal Portfolio Website',
     description:
-      'A personal portfolio website built with React to showcase my projects, skills, and experience. It features a clean and modern design, responsive layout, and smooth animations.',
-    tags: ['HTML', 'CSS', 'JavaScript', 'React'],
+      'It is a personal portfolio website that showcases my projects, skills, and experience. It is built with React JavaScript and CSS.',
+    tags: ['HTML','CSS','JavaScript','React JavaScript'],
     github: 'https://github.com/issei-css/Personal-Portfolio-Website',
     live: '#',
-  }
+  },
  
 ]
 
