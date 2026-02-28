@@ -7,7 +7,7 @@ const projects = [
     description:
       'It is a gate system that uses RFID technology to control access to the campus. It allows students and staff to enter and exit the campus using their ID cards.',
     tags: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
-    github: '#',
+    github: 'https://github.com/issei-css/BulSU-Gate-System',
     live: '#',
   },
   {
