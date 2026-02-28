@@ -31,8 +31,8 @@ const projects = [
     description:
       'It is a system that manages the inventory of PC parts in a store. It allows users to add, update, and delete PC parts, as well as view the current inventory.',
     tags: ['HTML','CSS','JavaScript','React JavaScript','MySQL',],
-    github: 'https://github.com/issei-css/PC-Parts-Inventory-System',
-    live: '#',
+    github: 'https://github.com/issei-css/REACT-TRAINING',
+    live: 'https://pc-parts-inventory.vercel.app/',
   },
   
  {
@@ -40,7 +40,7 @@ const projects = [
     description:
       'It is a personal portfolio website that showcases my projects, skills, and experience. It is built with React JavaScript and CSS.',
     tags: ['HTML','CSS','JavaScript','React JavaScript'],
-    github: 'https://github.com/issei-css/Personal-Portfolio-Website',
+    github: 'https://github.com/issei-css/Personal_Portfolio_Website',
     live: '#',
   },
  
