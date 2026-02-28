@@ -1,0 +1,274 @@
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.skill-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  text-align: center;
+  transition: var(--transition);
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0;
+}
+
+.skill-card:hover {
+  border-color: var(--primary);
+  background: var(--bg-card-hover);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+.skill-card__icon {
+  font-size: 2.8rem;
+  margin-bottom: 14px;
+  transition: var(--transition);
+}
+
+.skill-card:hover .skill-card__icon {
+  transform: scale(1.15);
+}
+
+.skill-card__name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: var(--text-primary);
+}
+
+.skill-card__bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.skill-card__progress {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 1s ease;
+}
+
+.skill-card__level {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-family: 'Fira Code', monospace;
+}
+
+@media (max-width: 900px) {
+  .skills__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skills__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .skill-card {
+    padding: 22px 16px;
+  }
+
+  .skill-card__icon {
+    font-size: 2.2rem;
+  }
+}
+
+/* ───────────────────── Networking Section ───────────────────── */
+
+.networking-section {
+  margin-top: 64px;
+  padding: 40px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.networking-section__header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.networking-section__icon-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.networking-section__cisco-icon {
+  font-size: 3rem;
+  color: #049fd9;
+}
+
+.networking-section__net-icon {
+  font-size: 2.4rem;
+  color: var(--primary);
+}
+
+.networking-section__title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.networking-section__desc {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.networking-section__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 32px;
+  list-style: none;
+  padding: 0;
+}
+
+.networking-section__list-item {
+  position: relative;
+  padding-left: 24px;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.networking-section__list-item::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .networking-section {
+    padding: 24px 18px;
+  }
+
+  .networking-section__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ───────────────────── Certificates Section ───────────────────── */
+
+.certificates-section {
+  margin-top: 56px;
+  text-align: center;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.certificates-section__title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.certificates-section__subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cert-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0;
+  transition: var(--transition);
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0;
+}
+
+.cert-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.cert-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .certificates-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .certificates-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* ───────────────────── Lightbox ───────────────────── */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(6px);
+  animation: fadeIn 0.25s ease;
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  font-size: 2.4rem;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  transition: transform 0.2s;
+}
+
+.lightbox__close:hover {
+  transform: scale(1.2);
+}
+
+.lightbox__img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 8px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to   { opacity: 1 }
+}

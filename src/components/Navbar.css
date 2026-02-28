@@ -1,0 +1,113 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 18px 0;
+  transition: var(--transition);
+  background: transparent;
+}
+
+.navbar.scrolled {
+  background: rgba(10, 10, 26, 0.92);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 0;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.3);
+}
+
+.navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: 'Fira Code', monospace;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.navbar__logo span {
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 36px;
+}
+
+.navbar__links li a {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.navbar__links li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-1);
+  transition: var(--transition);
+  border-radius: 2px;
+}
+
+.navbar__links li a:hover,
+.navbar__links li a.active {
+  color: var(--text-primary);
+}
+
+.navbar__links li a:hover::after,
+.navbar__links li a.active::after {
+  width: 100%;
+}
+
+.navbar__toggle {
+  display: none;
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  background: transparent;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .navbar__toggle {
+    display: block;
+    z-index: 1001;
+  }
+
+  .navbar__links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 260px;
+    height: 100vh;
+    background: var(--bg-card);
+    flex-direction: column;
+    padding: 100px 40px 40px;
+    gap: 28px;
+    transition: var(--transition);
+    border-left: 1px solid var(--border);
+  }
+
+  .navbar__links.active {
+    right: 0;
+  }
+
+  .navbar__links li a {
+    font-size: 1.05rem;
+  }
+}
