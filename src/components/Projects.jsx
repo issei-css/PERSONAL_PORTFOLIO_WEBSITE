@@ -34,6 +34,15 @@ const projects = [
     github: 'https://github.com/issei-css/REACT-TRAINING',
     live: 'https://pc-parts-inventory.vercel.app/',
   },
+
+  {
+    title: 'Student Management System',
+    description:
+      'It is a system that manages student records, that allows the admin to operate CRUD operations on student records, as well as view the current students in the system.',
+    tags: ['HTML', 'CSS', 'JavaScript', 'React JavaScript', 'MySQL'],
+    github: 'https://github.com/issei-css/Student_Management_System',
+    live: '#',
+  },
   
  {
     title: 'Personal Portfolio Website',
