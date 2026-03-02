@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser'
 import './Contact.css'
 
 // Initialize EmailJS - Replace with your Public Key from EmailJS
-emailjs.init('YOUR_EMAILJS_PUBLIC_KEY')
+emailjs.init('UB6YAWPzh7778jMio')
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
@@ -30,8 +30,8 @@ export default function Contact() {
 
     emailjs
       .send(
-        'YOUR_EMAILJS_SERVICE_ID',
-        'YOUR_EMAILJS_TEMPLATE_ID',
+        'service_yisvaiq',
+        'template_uiwx9ml',
         templateParams
       )
       .then(() => {
@@ -42,6 +42,11 @@ export default function Contact() {
       })
       .catch((error) => {
         console.error('Email sending failed:', error)
+        console.error('Error details:', {
+          status: error.status,
+          text: error.text,
+          message: error.message
+        })
         setError(true)
         setLoading(false)
         setTimeout(() => setError(false), 4000)
