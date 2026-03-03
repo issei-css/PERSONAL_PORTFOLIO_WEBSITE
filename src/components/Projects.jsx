@@ -43,6 +43,15 @@ const projects = [
     github: 'https://github.com/issei-css/Student_Management_System',
     live: '#',
   },
+
+  {
+    title: 'Band Explorer',
+    description:
+      'It is a web application that allows users to explore different bands and their music. It is built with React JavaScript and uses the Spotify API to fetch band information and music.',
+    tags: ['HTML','CSS','JavaScript','React JavaScript','Spotify API'],
+    github: 'https://github.com/issei-css/Band-Explorer',
+    live: 'https://band-explorer-jusfh88pp-issei-css-projects.vercel.app/',
+  },
   
  {
     title: 'Personal Portfolio Website',
