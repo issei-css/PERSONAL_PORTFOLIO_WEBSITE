@@ -1,68 +1,76 @@
-import { FiExternalLink, FiGithub } from 'react-icons/fi'
-import './Projects.css'
+import { FiExternalLink, FiGithub } from "react-icons/fi";
+import "./Projects.css";
 
 const projects = [
   {
-    title: 'Bulsu Gate System',
+    title: "Bulsu Gate System",
     description:
-      'It is a gate system that uses RFID technology to control access to the campus. It allows students and staff to enter and exit the campus using their ID cards.',
-    tags: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com/issei-css/BulSU-Gate-System',
-    live: '#',
+      "It is a gate system that uses RFID technology to control access to the campus. It allows students and staff to enter and exit the campus using their ID cards.",
+    tags: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/issei-css/BulSU-Gate-System",
+    live: "#",
   },
   {
-    title: 'Dental Clinic Management System',
+    title: "Dental Clinic Management System",
     description:
-      'It is a System that manages the operations of a dental clinic, including patient records, appointments, billing, and inventory management. It is built with Java with GUI and MySQL database.',
-    tags: ['Java', 'MySQL', 'JavaFX'],
-    github: 'https://github.com/issei-css/Dental_Clinic_Management_System',
-    live: '#',
+      "It is a System that manages the operations of a dental clinic, including patient records, appointments, billing, and inventory management. It is built with Java with GUI and MySQL database.",
+    tags: ["Java", "MySQL", "JavaFX"],
+    github: "https://github.com/issei-css/Dental_Clinic_Management_System",
+    live: "#",
   },
   {
-    title: 'Event Driven Programming Project',
+    title: "Event Driven Programming Project",
     description:
-      'It is a project that demonstrates the use of event-driven programming concepts. It is built with Java and MySQL database. It allows users to create and manage events, with a GUI interface.',
-    tags: ['Java', 'MySQL', 'JavaFX'],
-    github: 'https://github.com/issei-css/MidYear_Project_2025',
-    live: '#',
+      "It is a project that demonstrates the use of event-driven programming concepts. It is built with Java and MySQL database. It allows users to create and manage events, with a GUI interface.",
+    tags: ["Java", "MySQL", "JavaFX"],
+    github: "https://github.com/issei-css/MidYear_Project_2025",
+    live: "#",
   },
   {
-    title: 'PC Parts Inventory System',
+    title: "PC Parts Inventory System",
     description:
-      'It is a system that manages the inventory of PC parts in a store. It allows users to add, update, and delete PC parts, as well as view the current inventory.',
-    tags: ['HTML','CSS','JavaScript','React JavaScript','MySQL',],
-    github: 'https://github.com/issei-css/REACT-TRAINING',
-    live: 'https://pc-parts-inventory.vercel.app/',
+      "It is a system that manages the inventory of PC parts in a store. It allows users to add, update, and delete PC parts, as well as view the current inventory.",
+    tags: ["HTML", "CSS", "JavaScript", "React JavaScript", "MySQL"],
+    github: "https://github.com/issei-css/REACT-TRAINING",
+    live: "https://pc-parts-inventory.vercel.app/",
   },
 
   {
-    title: 'Student Management System',
+    title: "Student Management System",
     description:
-      'It is a system that manages student records, that allows the admin to operate CRUD operations on student records, as well as view the current students in the system.',
-    tags: ['HTML', 'CSS', 'JavaScript', 'React JavaScript', 'MySQL'],
-    github: 'https://github.com/issei-css/Student_Management_System',
-    live: '#',
+      "It is a system that manages student records, that allows the admin to operate CRUD operations on student records, as well as view the current students in the system.",
+    tags: ["HTML", "CSS", "JavaScript", "React JavaScript", "MySQL"],
+    github: "https://github.com/issei-css/Student_Management_System",
+    live: "#",
   },
 
   {
-    title: 'Band Explorer',
+    title: "Band Explorer",
     description:
-      'It is a web application that allows users to explore different bands and their music. It is built with React JavaScript and uses the Spotify API to fetch band information and music.',
-    tags: ['HTML','CSS','JavaScript','React JavaScript','Spotify API'],
-    github: 'https://github.com/issei-css/Band-Explorer',
-    live: 'https://band-explorer.vercel.app/',
+      "It is a web application that allows users to explore different bands and their music. It is built with React JavaScript and uses the Spotify API to fetch band information and music.",
+    tags: ["HTML", "CSS", "JavaScript", "React JavaScript", "Spotify API"],
+    github: "https://github.com/issei-css/Band-Explorer",
+    live: "https://bandexplorer.netlify.app/",
   },
-  
- {
-    title: 'Personal Portfolio Website',
+
+  {
+    title: "Personal Portfolio Website",
     description:
-      'It is a personal portfolio website that showcases my projects, skills, and experience. It is built with React JavaScript and CSS.',
-    tags: ['HTML','CSS','JavaScript','React JavaScript'],
-    github: 'https://github.com/issei-css/Personal_Portfolio_Website',
-    live: '#',
+      "It is a personal portfolio website that showcases my projects, skills, and experience. It is built with React JavaScript and CSS.",
+    tags: ["HTML", "CSS", "JavaScript", "React JavaScript"],
+    github: "https://github.com/issei-css/Personal_Portfolio_Website",
+    live: "#",
   },
- 
-]
+
+  {
+    title: "Business Expenses Tracker",
+    description:
+      "It is a web application that allows users to track their business expenses. It is built with React JavaScript and uses a MySQL database to store expense data.",
+    tags: ["HTML", "CSS", "JavaScript", "React JavaScript", "MySQL"],
+    github: "https://github.com/issei-css/Business-Expense-Tracker",
+    live: "https://business-expense-tracker-seven.vercel.app/login",
+  },
+];
 
 export default function Projects() {
   return (
@@ -82,15 +90,32 @@ export default function Projects() {
             >
               <div className="project-card__header">
                 <div className="project-card__folder">
-                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                  >
                     <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
                   </svg>
                 </div>
                 <div className="project-card__links">
-                  <a href={project.github} target="_blank" rel="noreferrer" aria-label="GitHub">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="GitHub"
+                  >
                     <FiGithub />
                   </a>
-                  <a href={project.live} target="_blank" rel="noreferrer" aria-label="Live">
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Live"
+                  >
                     <FiExternalLink />
                   </a>
                 </div>
@@ -101,7 +126,9 @@ export default function Projects() {
 
               <div className="project-card__tags">
                 {project.tags.map((tag) => (
-                  <span key={tag} className="tag">{tag}</span>
+                  <span key={tag} className="tag">
+                    {tag}
+                  </span>
                 ))}
               </div>
             </div>
@@ -109,7 +136,5 @@ export default function Projects() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
-
