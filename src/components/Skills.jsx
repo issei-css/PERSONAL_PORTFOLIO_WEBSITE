@@ -1,48 +1,67 @@
-import { useState } from 'react'
+import { useState } from "react";
 import {
-  FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaPhp, FaDatabase, FaFigma, FaNetworkWired
-} from 'react-icons/fa'
-import { SiFirebase, SiSharp, SiCisco } from 'react-icons/si'
-import './Skills.css'
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare,
+  FaReact,
+  FaPhp,
+  FaDatabase,
+  FaFigma,
+  FaNetworkWired,
+  FaGift,
+  FaGit,
+  FaGithub,
+} from "react-icons/fa";
+import {
+  SiFirebase,
+  SiSharp,
+  SiCisco,
+  SiSupabase,
+  SiTypescript,
+  SiTypst,
+} from "react-icons/si";
+import "./Skills.css";
 
 const skills = [
-  { name: 'HTML', icon: <FaHtml5 />, color: '#e44d26', level: 90 },
-  { name: 'CSS', icon: <FaCss3Alt />, color: '#264de4', level: 85 },
-  { name: 'JavaScript', icon: <FaJsSquare />, color: '#f7df1e', level: 80 },
-  { name: 'React', icon: <FaReact />, color: '#61dafb', level: 75 },
-  { name: 'PHP', icon: <FaPhp />, color: '#777bb4', level: 75 },
-  { name: 'MySQL', icon: <FaDatabase />, color: '#00758f', level: 75 },
-  { name: 'Firebase', icon: <SiFirebase />, color: '#ffca28', level: 70 },
-  { name: 'C#', icon: <SiSharp />, color: '#68217a', level: 70 },
-  { name: 'Figma', icon: <FaFigma />, color: '#a259ff', level: 80 },
-]
+  { name: "HTML", icon: <FaHtml5 />, color: "#e44d26", level: 90 },
+  { name: "CSS", icon: <FaCss3Alt />, color: "#264de4", level: 85 },
+  { name: "JavaScript", icon: <FaJsSquare />, color: "#f7df1e", level: 80 },
+  { name: "React", icon: <FaReact />, color: "#61dafb", level: 75 },
+  { name: "PHP", icon: <FaPhp />, color: "#777bb4", level: 75 },
+  { name: "MySQL", icon: <FaDatabase />, color: "#00758f", level: 75 },
+  { name: "Firebase", icon: <SiFirebase />, color: "#ffca28", level: 70 },
+  { name: "C#", icon: <SiSharp />, color: "#68217a", level: 70 },
+  { name: "Supabase", icon: <SiSupabase />, color: "#3ecf8e", level: 65 },
+  { name: "Cisco Networking", icon: <SiCisco />, color: "#1ba0d8", level: 80 },
+  { name: "TypeScript", icon: <SiTypescript />, color: "#3178c6", level: 60 },
+  { name: "Git", icon: <FaGit />, color: "#f05032", level: 80 },
+  { name: "GitHub", icon: <FaGithub />, color: "#000000", level: 80 },
+];
 
 const networkingSkills = [
-  'Cisco Packet Tracer – Network simulation & topology design',
-  'Router & Switch Configuration (CLI)',
-  'VLAN Setup & Inter-VLAN Routing',
-  'Static & Dynamic Routing (RIP, OSPF, EIGRP)',
-  'IP Addressing & Subnetting',
-  'Network Troubleshooting & Diagnostics',
-  'Firewall & ACL Configuration',
-  'LAN/WAN Design & Implementation',
-]
+  "Cisco Packet Tracer – Network simulation & topology design",
+  "Router & Switch Configuration (CLI)",
+  "VLAN Setup & Inter-VLAN Routing",
+  "Static & Dynamic Routing (RIP, OSPF, EIGRP)",
+  "IP Addressing & Subnetting",
+  "Network Troubleshooting & Diagnostics",
+  "Firewall & ACL Configuration",
+  "LAN/WAN Design & Implementation",
+];
 
 const certificates = Array.from({ length: 9 }, (_, i) => ({
   src: `/images/cisco-cert-${i + 1}.png`,
   alt: `Cisco Networking Certificate ${i + 1}`,
-}))
+}));
 
 export default function Skills() {
-  const [lightbox, setLightbox] = useState(null)
+  const [lightbox, setLightbox] = useState(null);
 
   return (
     <section className="skills section" id="skills">
       <div className="container">
         <h2 className="section-title">Tech Stack</h2>
-        <p className="section-subtitle">
-          Technologies and tools I work with
-        </p>
+        <p className="section-subtitle">Technologies and tools I work with</p>
 
         <div className="skills__grid">
           {skills.map((skill, i) => (
@@ -139,5 +158,5 @@ export default function Skills() {
         </div>
       )}
     </section>
-  )
+  );
 }

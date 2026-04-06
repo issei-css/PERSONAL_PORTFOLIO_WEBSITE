@@ -1,6 +1,6 @@
-import { Link } from 'react-scroll'
-import { FiArrowDown, FiGithub, FiLinkedin, FiFacebook } from 'react-icons/fi'
-import './Hero.css'
+import { Link } from "react-scroll";
+import { FiArrowDown, FiGithub, FiLinkedin, FiFacebook } from "react-icons/fi";
+import "./Hero.css";
 
 export default function Hero() {
   return (
@@ -22,27 +22,55 @@ export default function Hero() {
             Information Technology Student • Web Developer • Tech Enthusiast
           </p>
           <p className="hero__description">
-            Passionate about building modern web applications and learning new technologies.
-            Currently pursuing a degree in Information Technology at Bulacan State University.
+            Passionate about building modern web applications and learning new
+            technologies. Currently pursuing a degree in Information Technology
+            at Bulacan State University.
           </p>
 
           <div className="hero__actions">
-            <Link to="projects" smooth duration={500} offset={-70} className="btn btn--primary">
+            <Link
+              to="projects"
+              smooth
+              duration={500}
+              offset={-70}
+              className="btn btn--primary"
+            >
               View My Work
             </Link>
-            <Link to="contact" smooth duration={500} offset={-70} className="btn btn--outline">
+            <Link
+              to="contact"
+              smooth
+              duration={500}
+              offset={-70}
+              className="btn btn--outline"
+            >
               Get in Touch
             </Link>
           </div>
 
           <div className="hero__socials">
-            <a href="https://github.com/issei-css" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <a
+              href="https://github.com/issei-css"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub"
+            >
               <FiGithub />
             </a>
-            <a href="https://www.linkedin.com/in/issei-jansenn-sipagan-131b77378/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <a
+              href="https://www.linkedin.com/in/issei-jansenn-sipagan-131b77378/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+            >
               <FiLinkedin />
             </a>
-            <a href="https://www.facebook.com/jansenn.sipagan.14/" target="_blank" rel="noreferrer" aria-label="Facebook">
+            <a
+              href="https://www.facebook.com/jansenn.sipagan.14/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Facebook"
+            >
               <FiFacebook />
             </a>
           </div>
@@ -66,15 +94,15 @@ export default function Hero() {
             </div>
             <pre className="code-window__body">
               <code>
-{`const developer = {
-  name: "IT Student",
-  school: "Bulacan State Univ",
+                {`const developer = {
+  name: "Issei Jansenn O. Sipagan",
+  school: "Bulacan State University",
   degree: "BS Info Tech",
   gradYear: 2027,
   skills: [
     "HTML", "CSS", "JavaScript",
     "PHP", "MySQL", "Firebase",
-    "C#", "Figma"
+    "C#", "Supabase", "Cisco Networking"
   ],
   passion: "Building the web"
 };`}
@@ -84,9 +112,15 @@ export default function Hero() {
         </div>
       </div>
 
-      <Link to="about" smooth duration={500} offset={-70} className="hero__scroll-down">
+      <Link
+        to="about"
+        smooth
+        duration={500}
+        offset={-70}
+        className="hero__scroll-down"
+      >
         <FiArrowDown />
       </Link>
     </section>
-  )
+  );
 }
